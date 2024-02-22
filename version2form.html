@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Job Application Form</title>
+</head>
+
+<body bgcolor="teal"><br><br>
+    <form
+        style="background-color: lavenderblush; padding: 20px; border-radius: 8px;  margin: auto;width:40%;box-shadow:0 0 30px black;">
+        <fieldset>
+            <legend style="font-weight:bold;font-size:20px;">Job Application Form</legend><br>
+            First Name:<br>
+            <input type="text" name="firstname" placeholder="Your Name eg.Rafe" required
+                style="width: 100%; padding: 8px; margin: 5px 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;">
+            <br>
+            Last Name:<br>
+            <input type="text" name="lastname" placeholder="Your Surname eg. Shaikh" required
+                style="width: 100%; padding: 8px; margin: 5px 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;">
+            <br>
+            Gender:<br>
+            <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female">Female<br>
+            <input type="radio" name="gender" value="Others">Others<br>
+            Enter Date Of Birth:<input type="date" name="dob"
+                style="width:100%; padding: 8px; margin: 5px 0;  box-sizing:border-box; border:1px solid #ccc; border-radius: 4px;"><br>
+            Enter Your Contact Number:<br>
+            <input type="tel" name="number" pattern="+[0-9]{2} [0-9]{10}" required placeholder="eg. +91 9324133522"
+                style="width: 100%; padding: 8px; margin: 5px 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;"><br>
+            Enter Your Mail-Id:<br>
+            <input type="email" name="email" required
+                style="width: 100%; padding: 8px; margin: 5px 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;"><br>
+            Upload Your Image:<br>
+            <input type="file" name="image" required
+                style="width: auto; padding: 8px; margin: 5px 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;"><br>
+            Enter Your Address:<br>
+            <textarea name="address" rows="3" cols="30"
+                style="width: 100%; padding: 8px; margin: 5px 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;"></textarea><br>
+            Enter Your State:
+            <input list="State" name="State"
+                style="width: 100%;padding:8px;margin:5px 0;box-sizing:border-box;border:1px solid #ccc;border-radius:4px;"
+                required>
+            <datalist id="State">
+                <option value="Andhra Pradesh">
+                <option value="Arunachal Pradesh">
+                <option value="Assam">
+                <option value="Bihar">
+                <option value="Chhattisgarh">
+                <option value="Goa">
+                <option value="Haryana">
+                <option value="Himachal Pradesh">
+                <option value="Jharkhand">
+                <option value="Karnataka">
+                <option value="Madhya Pradesh">
+                <option value="Maharashtra">
+                <option value="Manipur">
+                <option value="Meghalaya">
+                <option value="Mizoram">
+                <option value="Nagaland">
+                <option value="Odisha">
+                <option value="Punjab">
+                <option value="Rajasthan">
+                <option value="Sikkim">
+                <option value="Tamil Nadu">
+                <option value="Telangana">
+                <option value="Tripura">
+                <option value="Uttar Pradesh">
+                <option value="Uttarakhand">
+                <option value="West Bengal">
+                <option value="Seawoods-Darave">
+            </datalist><br><br>
+            Enter your Domain:
+            <select name="domain"
+                style="width: 100%; padding: 8px; margin: 5px 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;">
+                <option value="AI-ML" selected>AI-Ml</option>
+                <option value="Cyber Security">Cyber Security</option>
+                <option value="Data Analyst">Data Analyst</option>
+                <option value="Backend">Backend</option>
+            </select><br><br>
+            Preferred Job Role:<br>
+            <input type="text" name="role"
+                style="width: 100%; padding: 8px; margin: 5px 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;"><br>
+            Upload Your Resume:<br>
+            <input type="file" name="resume"
+                style="width: auto; padding: 8px; margin: 5px 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;"><br>
+            User Name:<br>
+            <input type="text" name="userid"
+                style="width: 100%; padding: 8px; margin: 5px 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;">
+            <br>
+            User Password:<br>
+            <input type="password" name="psw"
+                style="width: 100%; padding: 8px; margin: 5px 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;"><br><br>
+            <input type="checkbox" required>I accept to the terms and conditions<br>    
+            <input type="submit" name="submit" value="Submit"
+                style="width: 100%; padding: 8px; margin: 5px 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;background-color:#4caf50;color:#f44336;cursor:pointer;font-weight:bold;font-size:medium;"><br>
+            <input type="reset" name="reset" value="Reset"
+                style="width: 100%; padding: 8px; margin: 5px 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;background-color:#f44336;color:#4caf50;cursor:pointer;font-weight:bold;font-size:medium;"><br>  
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
